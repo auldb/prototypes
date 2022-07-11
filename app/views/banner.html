@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<!-- two-thirds layout -->
+
+<div class="govuk-width-container">
+  <a href="index.html" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Tax and MOT notification banners</h1>
+
+<!-- MOT due to expire / tax current -->
+
+<h2 class="govuk-heading-m">MOT due to expire</h2>
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Reminder
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading">
+              The MOT for this vehicle runs out in 10 days. <a class=govuk-link href=https://www.gov.uk/getting-an-mot>Find out about getting an MOT.</a>
+            </p>
+          </div>
+        </div>
+
+<!-- due to expire option 2
+
+        <h3 class="govuk-heading-s">Option 2</h3>
+                <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                  <div class="govuk-notification-banner__header">
+                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                      Reminder
+                    </h2>
+                  </div>
+                  <div class="govuk-notification-banner__content">
+                    <p class="govuk-notification-banner__heading">
+                      The MOT for this vehicle runs out in 10 days on 23 Nov 2022. <a class=govuk-link href=https://www.gov.uk/mot-reminder>Get MOT reminders for this vehicle.</a>
+                    </p>
+                  </div>
+                </div>
+
+-->
+
+<!-- Option 3
+                <h3 class="govuk-heading-s">Option 3</h3>
+                                <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                                  <div class="govuk-notification-banner__header">
+                                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                      Reminder
+                                    </h2>
+                                  </div>
+                                  <div class="govuk-notification-banner__content">
+                                    <p class="govuk-notification-banner__heading">
+                                      The MOT for this vehicle runs out in 10 days on 23 Nov 2022. Book an MOT test now at an approved garage.
+                                    </p>
+                                  </div>
+                                </div>
+-->
+
+<!-- MOT expired -->
+
+<h2 class="govuk-heading-m">MOT expired</h2>
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="background-color:#d4351c; border-color:#d4351c">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      The MOT for this vehicle has run out. Book an MOT test now at an approved garage. 
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Expired option 2
+
+<h3 class="govuk-heading-s">Option 2</h3>
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      The MOT for this vehicle has run out. You can be fined up to £1000 for driving without an MOT.
+      <br>
+      <br>
+      Book an MOT test now at an approved garage. 
+    </p>
+  </div>
+</div>
+
+-->
+
+<!-- MOT and tax due to expire
+
+<h2 class="govuk-heading-m">MOT and tax due to expire</h2>
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Reminder
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      The tax for this vehicle runs out in 10 days on 23 Nov 2022. The MOT for this vehicle runs out in 10 days on 23 Nov 2022.
+<br>
+<br>
+      <a class=govuk-link href=https://www.gov.uk/vehicle-tax>Tax this vehicle now</a> and <a class=govuk-link href=https://www.gov.uk/getting-an-mot>find out about getting an MOT</a>.
+    </p>
+  </div>
+</div>
+
+
+<!-- MOT and tax expired
+
+<h2 class="govuk-heading-m">MOT and tax expired</h2>
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      The tax and MOT for this vehicle have run out.
+      <br>
+      <br>
+      <a class=govuk-link href=https://www.gov.uk/vehicle-tax>Tax this vehicle now</a> and book an MOT test at an approved garage.
+    </p>
+  </div>
+</div>
+
+-->
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,233 @@
+{% extends "layout_mot_signout.html" %}
+
+{% block pageTitle %}
+Manage your MOT reminders – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<!--
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+  -->
+{% endblock %}
+
+{% block content %}
+
+<!--
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+-->
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Manage your MOT reminders</h1>
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">Reminders for ben.auld@dvsa.gov.uk</h2>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <span class="govuk-body govuk-!-margin-bottom-3">
+          <div class="reg-mark-div">
+            <div class="reg-mark-sm">BC12 BCD</div>
+          </div>
+        </span>
+
+        <h3 class="gem-c-heading govuk-heading-m govuk-!-margin-bottom-4">Volkswagen Golf</h3>
+
+
+        <p class="govuk-body">
+          Your MOT runs out on 14 February 2023.
+          <br>
+        </p>
+        <p class="govuk-body">
+          <a href="manage-email-unsubscribe-conf"> Stop reminders <span class="govuk-visually-hidden"> for Volkswagen Golf, BC12 BCD</span>
+          </a>
+        </p>
+
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+          <span class="govuk-body govuk-!-margin-bottom-3">
+            <div class="reg-mark-div">
+              <div class="reg-mark-sm">CD52 CDE</div>
+            </div>
+          </span>
+
+          <h3 class="gem-c-heading govuk-heading-m govuk-!-margin-bottom-4">Honda Civic</h3>
+
+
+          <p class="govuk-body">
+            Your MOT runs out on 3 March 2023.
+          <br>
+          </p>
+          <p class="govuk-body">
+            <a href=""> Stop reminders <span class="govuk-visually-hidden"> for Honda Civic, CD52 CDE</span>
+            </a>
+          </p>
+
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+          <span class="govuk-body govuk-!-margin-bottom-3">
+
+            <div class="govuk-inset-text">To transfer MOT reminders to a different email or mobile number, you must stop reminders for the vehicle and <a href="">set up a new reminder</a>.
+            </div>
+
+    <div>
+    {% from "govuk/components/button/macro.njk" import govukButton %}
+
+    {{ govukButton({
+      text: "Stop all reminders",
+      href: "manage-email-unsubscribe-all-conf",
+      classes: "govuk-button--warning"
+    }) }}
+    </div>
+
+</div>
+
+<!--
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Related content</h3>
+        <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+
+      </div>
+    </div>
+
+-->
+
+
+
+<div class="govuk-grid-column-one-third">
+  <hr class="govuk-section-break govuk-section-break--l">
+<div class="gem-c-contextual-sidebar" style="border-top:2px solid #1d70b8">
+
+  <h3 class="govuk-heading-s govuk-!-padding-top-3">
+    Related content
+  </h3>
+
+  <ul class="govuk-list govuk-list--spaced" style="font-size: 16px;">
+
+        <li><a href="">Set up a new reminder</a></li>
+        <li><a href="">Manage MOT reminders for a different email or mobile phone number</a></li>
+        <li><a href="">Check the MOT history of a vehicle</a></li>
+
+  </ul>
+
+</div>
+</div>
+
+
+<!--
+  </main>
+</div>
+-->
+
+
+<!--
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="gem-c-heading govuk-heading-l govuk-!-margin-bottom-6">Manage your MOT reminders</h1>
+
+
+    <h2 class="gem-c-heading govuk-heading-s govuk-!-margin-bottom-4">Reminders for ben.auld@dvsa.gov.uk</h2>
+
+
+
+
+        <div class="govuk-inset-text">
+        To transfer MOT reminders to a different mobile number or email, you must stop reminders for the vehicle and <a href="">set up a new reminder</a>.
+        </div>
+
+<!--
+        <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Transferring reminders to a different phone or email
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    You must stop reminders for the vehicle and then set up a new reminder with the updated contact details.
+  </div>
+</details>
+
+
+
+      <hr class="govuk-section-break govuk-section-break--l">
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <span class="govuk-body govuk-!-margin-bottom-3">
+          <div class="reg-mark-div">
+            <div class="reg-mark-sm">BC12 BCD</div>
+          </div>
+        </span>
+
+        <h3 class="gem-c-heading govuk-heading-m govuk-!-margin-bottom-4">Volkswagen Golf</h3>
+
+
+        <p class="govuk-body">
+          Your MOT runs out on 14 February 2023.
+          <br>
+        </p>
+        <p class="govuk-body">
+          <a class="govuk-link govuk-link--no-visited-state" data-module="gem-track-click" data-track-category="Manage_your_email_subscriptions" data-track-action="Unsubscribe" data-track-label="From_specific_logged_out" href="/email/unsubscribe/97f246d8-47d7-4890-adc3-214e513837cd">        Stop reminders <span class="govuk-visually-hidden"> for Volkswagen Golf, BC12 BCD</span>
+    </a>
+        </p>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+        <span class="govuk-body govuk-!-margin-bottom-3">
+          <div class="reg-mark-div">
+            <div class="reg-mark-sm">CD52 CDE</div>
+          </div>
+        </span>
+
+        <h3 class="gem-c-heading govuk-heading-m govuk-!-margin-bottom-4">Honda Civic</h3>
+
+
+        <p class="govuk-body">
+          Your MOT runs out on 3 March 2023.
+        <br>
+        </p>
+        <p class="govuk-body">
+          <a class="govuk-link govuk-link--no-visited-state" data-module="gem-track-click" data-track-category="Manage_your_email_subscriptions" data-track-action="Unsubscribe" data-track-label="From_specific_logged_out" href="/email/unsubscribe/7f6cc7a7-ae2c-4e76-8ced-55a7b13c08f2">        Stop reminders <span class="govuk-visually-hidden"> for Honda Civic, CD52 CDE</span>
+    </a>
+        </p>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+        <span class="govuk-body govuk-!-margin-bottom-3">
+
+          <p class="govuk-body">
+
+
+
+          <a class="gem-c-button govuk-button govuk-button--secondary" role="button" data-module="gem-track-click" data-track-category="Manage_your_email_subscriptions" data-track-action="Unsubscribe" data-track-label="From_everything_logged_out" draggable="false" href="/email/manage/unsubscribe-all">Stop all reminders</a>
+
+
+          </p>
+
+          <p class="govuk-body">
+            <a class="govuk-link govuk-link--no-visited-state" href="/email/manage/address">Manage reminders for a different email or mobile number</a>
+            <br>
+            <a class="govuk-link govuk-link--no-visited-state" href="/email/manage/address">Set up a new reminder</a>
+            </p>
+
+-->
+
+
+
+
+{% endblock %}

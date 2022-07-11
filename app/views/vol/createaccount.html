@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create account – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+    <h1 class="govuk-fieldset__heading">
+      Create an account
+    </h1>
+  </legend>
+<h2 class="govuk-heading-m govuk-!-padding-top-3">Your details</h2>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-1">
+      Create a username
+    </label>
+    <div id="more-detail-hint" class="govuk-hint">
+
+      Your username must:
+        <ul>
+          <li>be between 4 and 40 characters long</li>
+          <li>only use lowercase letters (a-z) and numbers (0-9)</li>
+          <li>start with a lowercase letter</li>
+        </ul>
+
+    </div>
+    <input class="govuk-input govuk-!-width-one-third" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+  </div>
+</fieldset>
+
+{% endblock %}

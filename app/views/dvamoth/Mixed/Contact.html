@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check the MOT history of a vehicle – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Driving and transport</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="#">Driving tests and learning to drive or ride</a></li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l">Contact DVA</span>
+          <h1 class="govuk-heading-l">Driver & Vehicle Agency - driver licensing & vehicle testing</h1>
+
+          <p>Find out more <a href="#">about MOTs</a>.</p>
+
+          <p style="border-left: 1px solid #b1b4b6;padding-left:15px">Driver & Vehicle Agency
+            <br><a href="#">dva@infrastructure-ni.gov.uk</a>
+            <br>Telephone: 0300 200 7861
+            <br>Monday to Friday, 7:30am to 6pm
+            <br><a href="#">Find out about call charges</a>
+          </p>
+
+          <div class="govuk-inset-text">
+            You can <a href="#">give feedback</a> about the service that you were given after you’ve contacted DVSA.
+          </div>
+
+          <br>
+          <h1 class="govuk-heading-m">Your answers</h1>
+
+          <p><a href="#">Start again</a></p>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              1. What do you want to contact DVA about?
+            </dt>
+            <dd class="govuk-summary-list__value">
+              MOT, vehicle tests and approval
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+    </div>
+  </div>
+
+{% endblock %}

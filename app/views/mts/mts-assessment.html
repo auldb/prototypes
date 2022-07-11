@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Notification</span>
+      <h1 class="govuk-heading-xl">Annual assessment reminder</h1>
+      <p class="govuk-body-l">Published 30 May 2022</p>
+
+      <p class="govuk-body">You will be suspended if you do not pass your Group A annual assessment before the end of the training year. The training year begins on 1 April and ends on 31 March each year.
+        <br>
+        <br>
+        To pass your assessment, you must score at least 80% and upload it to your MTS profile.
+        <br>
+        <br>
+        If you do not pass it before the deadline, you cannot resume testing until you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              complete the assessment for the next training year
+            <li>
+              take a demonstration test with a DVSA vehicle examiner
+            </li>
+          </ul>
+
+
+  <!--  <p class="govuk-body">If you are suspended, you will need to complete the assessment for the next training year and take a demonstration test with a DVSA vehicle examiner. You cannot resume testing until you have done this.</p>-->
+
+      <p class="govuk-body">
+        Contact your assessment provider if your pass certificate is not showing on your MTS profile.
+      </p>
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      {{ govukButton({
+        text: "Archive this message"
+      }) }}
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,320 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  VAUXHALL ZAFIRA – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-4">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">EIG 2519</span>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        VAUXHALL ZAFIRA
+      </h1>
+      <p><a class="govuk-link--no-visited-state" href="reg">Check another vehicle</a></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-4">
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Colour</span>
+      <h2 class="govuk-heading-m">Silver</h2>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Fuel type</span>
+      <h2 class="govuk-heading-m">Petrol</h2>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Date registered</span>
+      <h2 class="govuk-heading-m">29 March 2007</h2>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+    <span class="govuk-caption-l">MOT valid until</span>
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-6">
+      17 September 2022
+    </h1>
+    <p><a class="govuk-link--no-visited-state" href="">Get an MOT reminder</a> or <a class="govuk-link--no-visited-state" href="">download test certificates</a> if your vehicle is registered in England, Scotland or Wales.</p>
+      <p>If you think the MOT expiry date or any of the vehicle details are wrong, <a class="govuk-link--no-visited-state" href="contact.html">contact DVA</a>.</p>
+    </div>
+  </div>
+
+
+  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+            MOT history
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        Check mileage recorded at test, MOT expiry date and test outcome
+        </div>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+        <!--Start MOT test-->
+        <div class="govuk-grid-row">
+               <div class="govuk-grid-column-one-third">
+                               <span class="govuk-caption-m">Date tested</span>
+                               <h2 class="govuk-heading-s govuk-!-margin-bottom-1">18 September 2021</h2>
+                               <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+               </div>
+          <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-grid-row">
+               <div class="govuk-grid-column-one-half govuk-!-margin-bottom-5">
+                               <span class="govuk-caption-m">Mileage</span>
+                               <h2 class="govuk-heading-s">132,345 miles</h2>
+                               <span class="govuk-caption-m">Test location</span>
+                               <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 0px;">
+                              <summary class="govuk-details__summary">
+                                              <span class="govuk-details__summary-text">
+                                              View test location
+                    </span>
+                              </summary>
+                              <div class="govuk-details__text">
+                                              <label class="govuk-label">
+                                              Enter latest V5C number </label>
+                                              <div class="govuk-hint">
+                                                               11 digits from the vehicle log book
+                                              </div>
+                                              <input class="govuk-input govuk-input--width-10">
+                                              <br>
+                                              <br>
+                                              <a href="" class="govuk-button">Show test location</a>
+                              </div>
+                               </details>
+               </div>
+               <div class="govuk-grid-column-one-half">
+                               <span class="govuk-caption-m">MOT test number</span>
+                               <h2 class="govuk-heading-s">5620 3268 4189</h2>
+                               <span class="govuk-caption-m">Expiry date</span>
+                               <h2 class="govuk-heading-s">17 September 2022</h2>
+               </div>
+            </div>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <span class="govuk-caption-m">Monitor and repair if necessary (advisories):</span>
+                <ul class="govuk-list govuk-list--bullet govuk-!-font-weight-bold">
+                  <li class="govuk-!-margin-bottom-0">Front Track rod end ball joint has slight play (2.1.3 (b) (i))</li>
+                </ul>
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      What are advisories?
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    Advisories are captured and given for guidance in England, Scotland & Wales. Some of these may need to be monitored in case they become more serious and need immediate repairs.
+                  </div>
+                </details>
+              </div>
+            </div>
+        </div><hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"></div>
+        <!--End MOT test-->
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+               <div class="govuk-grid-column-one-third">
+                               <span class="govuk-caption-m">Date tested</span>
+                               <h2 class="govuk-heading-s govuk-!-margin-bottom-1">18 September 2021</h2>
+                               <h2 class="govuk-heading-xl" style="color:#b10e1e;">FAIL</h2>
+               </div>
+          <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-grid-row">
+               <div class="govuk-grid-column-one-half govuk-!-margin-bottom-5">
+                               <span class="govuk-caption-m">Mileage</span>
+                               <h2 class="govuk-heading-s">131,687 miles</h2>
+                               <span class="govuk-caption-m">Test location</span>
+                               <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 0px;">
+                              <summary class="govuk-details__summary">
+                                              <span class="govuk-details__summary-text">
+                                              View test location
+                    </span>
+                              </summary>
+                              <div class="govuk-details__text">
+                                              <label class="govuk-label">
+                                              Enter latest V5C number </label>
+                                              <div class="govuk-hint">
+                                                               11 digits from the vehicle log book
+                                              </div>
+                                              <input class="govuk-input govuk-input--width-10">
+                                              <br>
+                                              <br>
+                                              <a href="" class="govuk-button">Show test location</a>
+                              </div>
+                               </details>
+               </div>
+               <div class="govuk-grid-column-one-half">
+                               <span class="govuk-caption-m">MOT test number</span>
+                               <h2 class="govuk-heading-s">4901 5248 5547</h2>
+                               <span class="govuk-caption-m">Expiry date</span>
+                               <h2 class="govuk-heading-s">17 September 2022</h2>
+               </div>
+            </div>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <span class="govuk-caption-m">Dp not drive until repaired (dangerous defects):</span>
+                <ul class="govuk-list govuk-list--bullet govuk-!-font-weight-bold">
+                  <li class="govuk-!-margin-bottom-0">Hydraulic brake cylinder inadequately mounted and braking performance affected (1.1.16(c) (ii)))</li>
+                </ul>
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      What are defects?
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    Major defects may compromise the safety of the vehicle, put other road users at risk, or harm the environment. A vehicle with a major defect will fail the test.
+                  </div>
+                </details>
+              </div>
+            </div>
+        </div><hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"></div>
+        <!--End MOT test-->
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">13 January 2020</h2>
+            <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">123,248 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <h2 class="govuk-heading-s">Belfast MOT Test Centre,<br>66 Balmoral Road,<br>Belfast, BT12 6QL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">4901 5248 5547</h2>
+            <span class="govuk-caption-m">Expiry date</span>
+            <h2 class="govuk-heading-s">10 February 2021</h2>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">11 February 2019</h2>
+            <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">114,567 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <h2 class="govuk-heading-s">Belfast MOT Test Centre,<br>66 Balmoral Road,<br>Belfast, BT12 6QL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">4901 5248 5547</h2>
+            <span class="govuk-caption-m">Expiry date</span>
+            <h2 class="govuk-heading-s">10 February 2020</h2>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">4 February 2019</h2>
+            <h2 class="govuk-heading-xl" style="color:#b10e1e;">FAIL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">114,120 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <h2 class="govuk-heading-s">Belfast MOT Test Centre,<br>66 Balmoral Road,<br>Belfast, BT12 6QL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">4345 5678 5647</h2>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">15 January 2018</h2>
+            <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">104,976 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <h2 class="govuk-heading-s">Belfast MOT Test Centre,<br>66 Balmoral Road,<br>Belfast, BT12 6QL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">6789 4556 0943</h2>
+            <span class="govuk-caption-m">Expiry date</span>
+            <h2 class="govuk-heading-s">19 January 2019</h2>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">11 January 2017</h2>
+            <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">83,345 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <h2 class="govuk-heading-s">Belfast MOT Test Centre,<br>66 Balmoral Road,<br>Belfast, BT12 6QL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">4567 7897 2945</h2>
+            <span class="govuk-caption-m">Expiry date</span>
+            <h2 class="govuk-heading-s">19 January 2018</h2>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+
+      </div>
+    </div>
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+            Outstanding safety recalls
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        Check if VAUXHALL ZAFIRA ABC1234 has outstanding safety recalls
+        </div>
+      </div>
+      <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+        <h2 class="govuk-heading-l" style="color:#00703c;">No outstanding safety recalls found</h2>
+        <p class='govuk-body'>This information is provided by the vehicle manufacturer. If you think this information is wrong, contact the vehicle manufactrer's dealership. `please do not contact the DVSA, as we are not able to change the recall status.</p>
+        <p>Was this vehicle recall information useful to you? <a class="govuk-link--no-visited-state" href="#">Tell us your views</a> so we can improve the service. </p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Resend the email</h1>
+
+<p class="govuk-body">Emails sometimes take a few minutes to arrive. If you do not receive the email, you can resend it.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Change where the email is sent
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="mobile-number">
+        Email
+      </label>
+      <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" value="jane.doe@gmail.com" autocomplete="email">
+    </div>
+
+  </div>
+</details>
+
+<form class="form" action="email_auth" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Resend the email
+</button>
+</form>
+
+{% endblock %}

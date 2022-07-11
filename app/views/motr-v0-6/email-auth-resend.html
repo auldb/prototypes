@@ -1,0 +1,83 @@
+{% extends "layout_mot.html" %}
+
+{% block pageTitle %}
+Manage your MOT reminders – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="govuk-heading-l">Check your email again</h1>
+
+<p class="govuk-body">
+You will get an email from GOV.UK if <b>ben.auld@dvsa.gov.uk</b> is signed up for MOT reminders. <br><br>Click the link in the email to manage your reminders. This link expires 24 hours from now.
+<br>
+<br>
+If you do not receive the email, check your email address is correct and <a href="email-auth-resend">resend the email</a>. You can also <a href="contact-method">manage MOT reminders for a different email or mobile phone number</a>.</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div>
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  href: "manage-email",
+  text: "Manage my MOT reminders"
+}) }}
+</div>
+
+<div>
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  href: "manage-email-fleet",
+  text: "Manage my MOT reminders (paginated version)"
+}) }}
+</div>
+
+<!-- inset text
+
+      {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+      {{ govukInsetText({
+        text: "This link expires 24 hours from now."
+      }) }}
+
+-->
+
+<!-- details
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Not received an email?
+    </span>
+  </summary>
+  <div class="govuk-details__text">If you do not receive the email, check your email address is correct and <a href="email_auth_resend">resend the email</a>. You can also <a href="type-contact">check another contact method</a>.
+  </div>
+</details>
+
+<br>
+<br>
+<br>
+<br>
+<a href="viewmotremindersemail">View MOT reminders (email)</a>
+<br>
+<a href="viewmotreminderspagination">View MOT reminders (email - fleet users)</a>
+-->
+{% endblock %}

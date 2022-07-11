@@ -1,0 +1,44 @@
+{% extends "layout_mot.html" %}
+
+{% block pageTitle %}
+Manage your MOT reminders - {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Your link has expired or is incorrect</h1>
+
+    <p class="govuk-body">
+      The links we send expire after 24 hours. This is to protect your personal data.
+      <br>
+      <br>
+      If it has been less than 24 hours, check that the URL is correct and matches the link in the email.
+      <br>
+      <br>
+      <a href="/motr-v0-6/email">Request a new link to manage your MOT reminders</a>.
+    </p>
+
+  </div>
+</div>
+
+
+{% endblock %}

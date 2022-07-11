@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Unsubscribe success – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="viewmotremindersemail">Go back to your MOT reminders</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">
+    You have unsubscribed
+  </h1>
+  <div class="govuk-panel__body">
+    You have stopped MOT reminders for Volkswagen Golf, BC12 BCD at <strong>jane.doe@gmail.com</strong>
+  </div>
+</div>
+
+<p class="govuk-body govuk-!-padding-top-3">You can now
+<a class="govuk-link" href="viewmotremindersemail">go back to your MOT reminders</a>, or  <a class="govuk-link" href="route-decision">set up a new reminder</a>.
+</p>
+
+  <h2 class=govuk-heading-m>Help improve this service</h2>
+    <p class="govuk-body">To help make sure that this page is useful, <a href="">tell us what you think</a>.</p>
+
+{% endblock %}

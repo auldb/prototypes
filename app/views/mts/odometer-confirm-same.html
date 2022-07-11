@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+MOT testing service - {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-l">Check the odometer reading is correct</h1>
+
+          <p>You have entered the following odometer reading:
+            <br>
+            <br>
+            <strong>80,000 miles</strong>
+            <br>
+            <br>
+            This is the same as the last test.</p>
+
+        <div>
+          {% from "govuk/components/button/macro.njk" import govukButton %}
+
+          <div class="govuk-button-group">
+            {{ govukButton({
+              href: "manage-mobile-unsubscribed",
+              text: "Confirm reading"
+            }) }}
+
+            <a class="govuk-link" href="javascript:window.history.back()">Edit reading</a>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  VAUXHALL ZAFIRA – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-4">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">CU57ABC</span>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        VAUXHALL ZAFIRA
+      </h1>
+      <p><a class="govuk-link--no-visited-state" href="reg">Check another vehicle</a></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-4">
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Colour</span>
+      <h2 class="govuk-heading-m">Silver</h2>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Fuel type</span>
+      <h2 class="govuk-heading-m">Petrol</h2>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <span class="govuk-caption-m">Date registered</span>
+      <h2 class="govuk-heading-m">29 March 2007</h2>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+    <span class="govuk-caption-l">MOT valid until</span>
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-6">
+      17 September 2022
+    </h1>
+    <p><a class="govuk-link--no-visited-state" href="#">Get an MOT reminder</a> by email or text.</p>
+    <p>If you think the MOT expiry date or any of the vehicle details are wrong, <a class="govuk-link--no-visited-state" href="#">contact DVSA</a>.</p>
+    </div>
+  </div>
+
+
+  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+            MOT history
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        Check mileage recorded at test, MOT expiry date, defects and advisories, and view test certificate
+        </div>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+        <!--Start MOT test-->
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">18 September 2021</h2>
+            <h2 class="govuk-heading-xl" style="color:#00703c;">PASS</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">131,687 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <a class="govuk-link--no-visited-state" href="#">View test location</a>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">4901 5248 5547</h2>
+            <span class="govuk-caption-m">Expiry date</span>
+            <h2 class="govuk-heading-s">17 September 2022</h2>
+          </div>
+          <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-inset-text">
+              This test result was appealed and the vehicle was tested again. <a href="">Find out about appeals</a>.
+            </div>
+            <span class="govuk-caption-m">Monitor and repair if necessary (advisories):</span>
+            <ul class="govuk-list govuk-list--bullet govuk-!-font-weight-bold">
+              <li class="govuk-!-margin-bottom-0">Front Track rod end ball joint has slight play (2.1.3 (b) (i))</li>
+            </ul>
+            <a class="govuk-link--no-visited-state" href="#">What are advisories?</a>
+
+          </div>
+        </div>
+        <!--End MOT test-->
+
+
+        <!--Start MOT test-->
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">Date tested</span>
+            <h2 class="govuk-heading-s govuk-!-margin-bottom-1">9 February 2021</h2>
+            <h2 class="govuk-heading-xl" style="color:#b10e1e;">FAIL</h2>
+          </div>
+          <div class="govuk-grid-column-one-third govuk-!-margin-bottom-5">
+            <span class="govuk-caption-m">Mileage</span>
+            <h2 class="govuk-heading-s">131,620 miles</h2>
+            <span class="govuk-caption-m">Test location</span>
+            <a class="govuk-link--no-visited-state" href="#">View test location</a>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <span class="govuk-caption-m">MOT test number</span>
+            <h2 class="govuk-heading-s">1345 6778 5677</h2>
+          </div>
+          <div class="govuk-grid-column-two-thirds">
+            <span class="govuk-caption-m">Do not drive until repaired (dangerous defects):</span>
+            <ul class="govuk-list govuk-list--bullet govuk-!-font-weight-bold">
+              <li class="govuk-!-margin-bottom-0">Parking brake efficiency less than 50% of the required value (1.4.2 (a) (ii))</li>
+            </ul>
+            <span class="govuk-caption-m">Repair immediately (major defects):</span>
+            <ul class="govuk-list govuk-list--bullet govuk-!-font-weight-bold">
+              <li class="govuk-!-margin-bottom-0">Exhaust carbon monoxide content after 2nd fast idle exceeds default limits (8.2.1.2 (b))</li>
+            </ul>
+            <a class="govuk-link--no-visited-state" href="#">What are defects?</a>
+          </div>
+        </div>
+        <!--End MOT test-->
+
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-inset-text">
+              <h2 class="govuk-heading-s govuk-!-margin-bottom-0">MOT test changed on 20 May 2018</h2>
+              <p>Defects are now categorised according to their severity – dangerous, major, and minor. <a href="#">Find out more</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+            Outstanding safety recalls
+          </span>
+        </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        Check if VAUXHALL ZAFIRA CU57ABC has outstanding safety recalls
+        </div>
+      </div>
+      <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            This vehicle has an outstanding safety recall.
+          </strong>
+        </div>
+        <p class='govuk-body'>If you’re the owner of this vehicle you need to contact the local VAUXHALL dealership to arrange for a free repair.</p>
+        <p>If the recalled component has been repaired recently, it can take up to 3 weeks for the manufacturer to update their records. This information is provided by the vehicle manufacturer, so if you think the recall information is wrong you need to contact your local VAUXHALL dealership. </p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

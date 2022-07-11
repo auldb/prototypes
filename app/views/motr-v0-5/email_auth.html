@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Email authentication – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="govuk-heading-l">Check your email</h1>
+
+<p class="govuk-body">If <b>jane.doe@gmail.com</b> is signed up for MOT reminders, you will get an email from GOV.UK in your inbox. <br><br>Click the link in the email to view your reminders. This link expires 24 hours from now.</p>
+
+
+<!-- inset text
+
+      {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+      {{ govukInsetText({
+        text: "This link expires 24 hours from now."
+      }) }}
+
+-->
+
+<!-- details -->
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Not received an email?
+    </span>
+  </summary>
+  <div class="govuk-details__text">If you do not receive the email, check your email address is correct and <a href="email_auth_resend">resend the email</a>. You can also <a href="type-contact">check another contact method</a>.
+  </div>
+</details>
+
+<br>
+<br>
+<br>
+<br>
+<a href="viewmotremindersemail">View MOT reminders (email)</a>
+<br>
+<a href="viewmotreminderspagination">View MOT reminders (email - fleet users)</a>
+
+{% endblock %}

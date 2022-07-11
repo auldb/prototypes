@@ -1,0 +1,247 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your MOT reminders – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">MOT reminders for jane.doe@gmail.com</h1>
+
+<!-- Search box -->
+
+<div class="moj-search">
+
+  <form action="#" method="post">
+
+    <div class="govuk-form-group">
+      <label class="govuk-label moj-search__label govuk-!-font-weight-bold" for="search">
+        Find a vehicle by registration number
+      </label>
+
+      <div id="search-hint" class="govuk-hint moj-search__hint ">
+        For example, CU57ABC
+      </div>
+        <input class="govuk-input moj-search__input " style="width:125px;" id="search" name="search" type="search" aria-describedby="search-hint">
+    <button class="govuk-button moj-search__button " data-module="govuk-button">
+      Search
+    </button>
+
+  </form>
+</div>
+
+<!-- Spacer -->
+
+<p class="govuk-body govuk-!-margin-bottom-5"> </p>
+
+<!-- Table -->
+
+<table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <th scope="col" class="govuk-table__header">Registration number</th>
+    <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Make and model</th>
+    <th scope="col" class="govuk-table__header">MOT valid until</th>
+    <th scope="col" class="govuk-table__header">MOT history</th>
+    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Stop reminders</th>
+  </thead>
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">BC12 BCD</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Volkswagen Golf</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">25 January 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">CD52 CDE</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Honda Civic</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">28 January 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">AB09 CAF</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Nissan Micra</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">19 February 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">BU01 CUA</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Toyota Yaris</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">24 February 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">CN61 NMA</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Vauxhall Corsa</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">3 March 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">VS08 MAS</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Renault Clio</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">7 March 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">SC52 KLM</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Citroen C4</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">19 May 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">PU56 LKJ</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Ford Focus</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">28 June 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">TR03 HGF</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">BMW 3 Series</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">4 July 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">
+        <div class="reg-mark-div">
+          <div class="reg-mark-sm">ES58 ASF</div>
+      </td>
+
+      <td class="govuk-table__cell govuk-!-padding-top-3">Peugeot 206</td>
+      <td class="govuk-table__cell govuk-!-padding-top-3">26 July 2023</td>
+      <td class="govuk-table__cell govuk-table__cell govuk-!-padding-top-3"><a href="https://www.gov.uk/check-mot-history" target="_blank">View MOT history</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-padding-top-3"><a href="unsubscribe-email">Unsubscribe</a></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- Pagination -->
+
+{%- from "moj/components/pagination/macro.njk" import mojPagination -%}
+
+{{ mojPagination({
+  items: [{
+    text: '1',
+    href: '/page=1',
+    selected: true
+  }, {
+    text: '2',
+    href: '/page=2'
+  }, {
+    text: '3',
+    href: '/page=3'
+  }, {
+    type: 'dots'
+  }, {
+    text: '5',
+    href: '/page=5'
+  }],
+  results: {
+    count: 50,
+    from: 1,
+    to: 10,
+    text: 'vehicles'
+  },
+  previous: {
+    text: 'Previous',
+    href: ''
+  },
+  next: {
+    text: 'Next',
+    href: ''
+  }
+}) }}
+
+<!-- Inset text
+
+<div class="govuk-inset-text govuk-!-padding-top-3">
+  You can also <a href="">set up a new reminder</a> or <a href="">check a reminder registered to a different email or phone number</a>.
+</div>
+
+-->
+
+<!-- Paragraph text -->
+
+<p class="govuk-body govuk-!-padding-top-5"><a href="https://www.reminders.mot-testing.service.gov.uk/vrm">Set up a new reminder</a>, or <a href="type-contact">check a reminder registered to different contact details</a>.</p>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+
+      <span class="govuk-caption-xl">Notification</span>
+      <h1 class="govuk-heading-xl">Role removed due to inactivity</h1>
+      <p class="govuk-body-l">Published 30 May 2022</p>
+
+      <p class="govuk-body">You have been removed from the role of {role-title} because you have not signed in for 90 days.
+      <br>
+      <br>
+      Contact your line manager if you still need access to this role.
+      </p>
+
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      {{ govukButton({
+        text: "Archive this message"
+      }) }}
+
+
+    </div>
+  </div>
+
+{% endblock %}

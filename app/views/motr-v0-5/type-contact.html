@@ -1,0 +1,60 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+      <form class="form" action="type-contact-answer" method="post" action="#" name="my-form" id="my-form">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What type of reminder did you set up?
+              </h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-method" name="contact-method" type="radio" value="email">
+                <label class="govuk-label govuk-radios__label" for="contact-method">
+                  Email
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-method" name="contact-method" type="radio" value="phone">
+                <label class="govuk-label govuk-radios__label" for="contact-method-2">
+                  Text to my phone
+                </label>
+              </div>
+
+
+            </div>
+
+          </fieldset>
+        </div>
+
+        <input class="govuk-button" type="submit" value="Continue" />
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Why do we need this?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            We need to know the type of reminders you receive to show them to you. If you can’t remember, check your email or text messages for a message from us. You can also <a href="https://www.reminders.mot-testing.service.gov.uk/vrm">set up a new reminder</a>.
+          </div>
+        </details>
+
+      </form>
+
+
+
+{% endblock %}

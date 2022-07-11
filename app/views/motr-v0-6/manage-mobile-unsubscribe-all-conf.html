@@ -1,0 +1,57 @@
+{% extends "layout_mot_signout.html" %}
+
+{% block pageTitle %}
+Manage your MOT reminders - {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+          <h1 class="govuk-heading-l">Are you sure you want to stop all reminders?</h1>
+
+          <p>07775 444333 will stop getting MOT reminders for all vehicles.</p>
+
+          <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              You will not be able to undo this action.
+            </strong>
+          </div>
+
+          <div>
+            {% from "govuk/components/button/macro.njk" import govukButton %}
+
+            <div class="govuk-button-group">
+              {{ govukButton({
+                href: "manage-mobile-unsubscribed-all",
+                text: "Stop all reminders",
+                classes: "govuk-button--warning"
+              }) }}
+
+              <a class="govuk-link" href="javascript:window.history.back()">Cancel</a>
+            </div>
+
+          </div>
+
+    </div>
+  </div>
+
+{% endblock %}

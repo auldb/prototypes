@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-l">Check your phone</h1>
+
+<p class="govuk-body">If <b>07775 444333</b> is signed up for MOT reminders, you will get a text message with an authentication code. <br><br>Enter the code on this page to view your reminder.</p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="security-code">
+    Authentication code
+  </label>
+  <input class="govuk-input govuk-input--width-4" id="security-code" name="security-code" type="text" autocomplete="one-time-code" pattern="[0-9]*" inputmode="numeric">
+</div>
+
+<p><a href="viewmotreminderssms" class="govuk-button">Continue</a></p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Not received a text message?
+    </span>
+  </summary>
+  <div class="govuk-details__text">Check that the mobile number is correct. If you do not receive it, you can <a href="sms_auth_resend">request a new code</a> or <a href="">check another contact method</a>.
+  </div>
+</details>
+
+{% endblock %}

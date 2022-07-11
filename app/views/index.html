@@ -1,0 +1,119 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Index of prototypes
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Manage your MOT reminders
+              </span>
+            </h2>
+          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        A prototype for managing MOT reminder subscriptions.
+      </div>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p class='govuk-body'><a href="motr-v0-6/start.html">Manage your MOT reminders</a> <strong class="govuk-tag">v0.6</strong></p>
+            <p class='govuk-body'><a href="motr-v0-5/start.html">Manage your MOT reminders</a> <strong class="govuk-tag">v0.5</strong></p>
+            <p class='govuk-body'><a href="https://lucid.app/lucidspark/bea883e5-6e34-47ea-a1c0-5a8a63be232a/edit?viewport_loc=10299%2C37544%2C8231%2C4143%2C0_0&invitationId=inv_bc994055-fff1-4ed0-99f3-ee92d4bdd6ea#">Lucid board</a></p>
+          </div>
+        </div>
+
+<div class="govuk-accordion__section ">
+  <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+            MOT history service for Northern Ireland
+          </span>
+        </h2>
+      <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        A prototype for integrating DVA data from Northern Ireland into the MOT history service.
+  </div>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+        <p class='govuk-body'><a href="dvamoth/Simple/start.html">NI data only scenario</a>
+        <p class='govuk-body'><a href="dvamoth/Mixed/start.html">NI and GB data scenario</a>
+        <p class='govuk-body'><a href="dvamoth/FirstMOT/start.html">First MOT scenario</a>
+        </div>
+    </div>
+
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+              DVLA tax and MOT notification banners
+            </span>
+          </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        A prototype for tax and MOT notification banners in the DVLA account.
+      </div>
+        </div>
+        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+          <p class='govuk-body'><a href="banner.html">DVLA tax and MOT notification banners</a> <strong class="govuk-tag">v0.1</strong> </p>
+        </div>
+      </div>
+
+      <div class="govuk-accordion__section ">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+              MTS account notifications
+            </span>
+          </h2>
+        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+        Prototypes for various MTS notifications.
+      </div>
+        </div>
+        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+          <p class='govuk-body'><a href="mts/odometer-confirm-higher.html">Odometer input interrupt screen</a> <strong class="govuk-tag">v0.1</strong> </p>
+          <p class='govuk-body'><a href="mts/mts-assessment.html">MTS assessment reminder</a> <strong class="govuk-tag">v0.2</strong> </p>
+          <p class='govuk-body'><a href="mts/mts-role-removed.html">MTS role removed notification</a> <strong class="govuk-tag">v0.1</strong> </p>
+        </div>
+      </div>
+
+</div>
+</div>
+
+
+  <div class="govuk-grid-column-one-third">
+    <hr class="govuk-section-break govuk-section-break--m govuk-!-padding-top-2">
+  <div class="gem-c-contextual-sidebar" style="border-top:2px solid #1d70b8">
+
+    <h3 class="govuk-heading-s govuk-!-padding-top-3">
+      Design systems used
+    </h3>
+
+    <ul class="govuk-list govuk-list--spaced" style="font-size: 16px;">
+
+          <li><a href="https://design-system.service.gov.uk/">GOV.UK Frontend</a></li>
+          <li><a href="https://dvsa-design-system.herokuapp.com/">DVSA Design System</a></li>
+          <li><a href="https://design.tax.service.gov.uk/">HMRC Frontend</a></li>
+          <li><a href="https://design-patterns.service.justice.gov.uk/">MOJ Frontend</a></li>
+
+    </ul>
+
+  </div>
+  </div>
+
+{% endblock %}
