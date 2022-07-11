@@ -377,6 +377,10 @@ p + .govuk-heading-s,
   border-bottom: 1px solid #b1b4b6;
 }
 
+.govuk-section-break--black {
+  border-bottom: 1px solid #000000;
+}
+
 .govuk-button-group {
   margin-bottom: 5px;
   margin-bottom: 15px;
